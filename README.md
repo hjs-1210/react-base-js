@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# REACT BASE PROJECT FOR JS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> JS 기반의 REACT BASE PROJECT 입니다. <br/>
+> 기본적인 구조만 작성 되어 있습니다.
 
-## Available Scripts
+<br/>
 
-In the project directory, you can run:
+## 추천 extention
 
-### `yarn start`
+-   auto complete tag -> 설치 시 패키지 설치 됨 <br/>
+-   better comments <br/>
+-   git graph <br/>
+-   gitLense <br/>
+-   indent-rainbow <br/>
+-   js quick console <br/>
+-   prettier - Code formatter <br/>
+-   Rainbow Brackets <br/>
+-   Reactjs code snippets <br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br/>
+<br/>
+## 개발 환경
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### SKILL
 
-### `yarn test`
+![REACT Badge][react-badge]
+![YARN Badge][yarn-badge]
+![TS Badge][ts-badge]
+![Styled Badge][styled-badge]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### IDE
 
-### `yarn build`
+![VSCODE Badge][vscode-badge]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 사용방법
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 개발 env 설정 (파일 생성)
 
-### `yarn eject`
+`.env.development`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```env
+REACT_APP_ENV=development # 개발 환경 세팅
+REACT_APP_API_URL=URL # 사용할 개발 API URL
+REACT_APP_TITLE = "PILOT" # 브라우저 타이틀 명
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 실행
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```sh
+# 패키지 설치
+$ yarn install
+# 개발환경 실행
+$ yarn start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 빌드
 
-## Learn More
+```sh
+$ yarn build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br/>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 프로젝트 구조
 
-### Code Splitting
+```shell
+|-- build // build 된 내용
+|   |-- images
+|   `-- static
+|-- public // public resources
+|   `-- images
+`-- src // 실제 작업 파일
+    |-- apis // axios
+    |-- common // 공용 파일
+    |-- components // 공용 컴포넌트
+    |-- pages // 각 페이지들
+    |-- routes // 라우터 설정
+    |-- styles // 공용 css or styled component
+|-- README.md // readme
+|-- craco.config.js // carco 설정
+|-- package.json // package 관리
+|-- jsconfig.json // js 설정
+|-- .env // react 전역 변수 설정
+|-- .env.production  // react 전역 변수 설정 - 운영 버전
+|-- .git // git
+|-- .gitignore // git 에 올리지 않을 내용
+|-- .npmrc // p-ui install 을 위한 자체 라이브러리 설정
+|-- .prettierrc // 포매팅 설정
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
 
-### Analyzing the Bundle Size
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- Markdown link & img dfn's -->
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[version-badge]: https://img.shields.io/badge/version-2.4.0-critical.svg
+[react-badge]: https://img.shields.io/badge/react-skyblue.svg?logo=react&logoColor=black
+[yarn-badge]: https://img.shields.io/badge/yarn-2C8EBB.svg?logo=yarn&logoColor=white
+[ts-badge]: https://img.shields.io/badge/typescript-2C8EBB.svg?logo=typescript&logoColor=white
+[styled-badge]: https://img.shields.io/badge/styledcomponents-DB7093.svg?logo=styledcomponents&logoColor=white
+[vscode-badge]: https://img.shields.io/badge/vscode-007ACC.svg?logo=visualstudiocode&logoColor=white
