@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "baseUrl": ".",
+        "paths": {
+            "@components/*": ["src/components/*"],
+            "@pages/*": ["src/pages/*"], 
+            "@styles": ["src/styles/index"], 
+            "@store": ["src/store/index"], 
+            "@apis": ["src/apis/index"], 
+            "@asset/*": ["public/*"], 
+            "@route/*": ["src/routes/*"], 
+            "@utils": ["src/utils/index"]
+        },
+        "allowSyntheticDefaultImports": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "jsx": "react-jsx"
+    },
+    "include": ["src", "**/*.js", "**/*.jsx"],
+    "exclude": ["node_modules"]
+}

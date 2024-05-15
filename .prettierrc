@@ -1,0 +1,20 @@
+{
+    "printWidth": 120,
+    "tabWidth": 4,
+    "semi": false,
+    "arrowParens": "avoid",
+    "htmlWhitespaceSensitivity": "ignore",
+    "vueIndentScriptAndStyle": true,
+    "endOfLine": "lf",
+    "singleQuote": false,
+    "singleAttributePerLine": true,
+    "overrides": [
+      {
+        "files": "*.json",
+        "options": {
+          "printWidth": 100,
+          "tabWidth": 4
+        }
+      }
+    ]
+}
