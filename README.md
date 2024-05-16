@@ -7,15 +7,15 @@
 
 ## 추천 extention
 
--   auto complete tag -> 설치 시 패키지 설치 됨 <br/>
--   better comments <br/>
--   git graph <br/>
--   gitLense <br/>
--   indent-rainbow <br/>
--   js quick console <br/>
--   prettier - Code formatter <br/>
--   Rainbow Brackets <br/>
--   Reactjs code snippets <br/>
+-   auto complete tag : 자동으로 닫는 태그 생성 , 설치 시 관련 패키지 전체 설치 <br/>
+-   better comments : todo, fixme 등 comments 하이라이팅 <br/>
+-   git graph : git commit 기록 GUI 로 조회 <br/>
+-   gitLense : code 상에서 commit 기록 조회 (작성자 확인 가능) <br/>
+-   indent-rainbow : 들여쓰기 하이라이팅 <br/>
+-   js quick console : console.log 단축키 사용 <br/>
+-   prettier - Code formatter : code 규칙 적용 (tab, space 등) <br/>
+-   Rainbow Brackets : bracket 하이라이팅 (짝이 되는 bracket 수월하게 확인 가능) <br/>
+-   Reactjs code snippets : react.js code 작성 시 안내 및 단축어 지원  <br/>
 
 <br/>
 <br/>
