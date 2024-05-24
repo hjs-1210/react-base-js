@@ -6,16 +6,29 @@ import IntroPage from "@pages/Intro"
 import { useLocation, useNavigate, useRoutes } from "react-router-dom"
 import AboutPage from "@pages/About"
 
-const Routes = () => {
-    const navigate = useNavigate()
-    const { pathname, search } = useLocation()
+const AuthenticatedRoutes = () => {
+    const routeList = [
+        {
+            path: "/intro",
+            // @ts-ignore
+            element: <DefaultLayout />,
+            children: [{ index: true, element: <IntroPage /> }],
+        },
+        {
+            path: "/about",
+            // @ts-ignore
+            element: <DefaultLayout />,
+            children: [{ index: true, element: <AboutPage /> }],
+        },
+        {
+            path: "*",
+            element: <NotFound />,
+        },
+    ]
+    return useRoutes(routeList)
+}
 
-    useEffect(() => {
-        if (!sessionStorage.getItem("LOGIN")) {
-            navigate("/", { state: { pathname: pathname, search: search } })
-        }
-    }, [sessionStorage.getItem("LOGIN")])
-
+const UnauthenticatedRoutes = () => {
     const routeList = [
         {
             path: "/",
@@ -28,18 +41,23 @@ const Routes = () => {
             path: "*",
             element: <NotFound />,
         },
-        {
-            path: "/intro",
-            element: <DefaultLayout />,
-            children: [{ index: true, element: <IntroPage /> }],
-        },
-        {
-            path: "/about",
-            element: <DefaultLayout />,
-            children: [{ index: true, element: <AboutPage /> }],
-        },
     ]
     return useRoutes(routeList)
+}
+
+
+const Routes = () => {
+    const navigate = useNavigate()
+    const { pathname, search } = useLocation()
+    const isLoggedIn = !!sessionStorage.getItem("LOGIN")
+
+    useEffect(() => {
+        if (!isLoggedIn) {
+            navigate("/", { state: { pathname: pathname, search: search } })
+        }
+    }, [isLoggedIn])
+
+    return isLoggedIn ? <AuthenticatedRoutes /> : <UnauthenticatedRoutes />
 }
 
 export default Routes

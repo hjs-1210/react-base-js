@@ -1,0 +1,38 @@
+.table{
+    border-collapse: collapse;
+    border-radius: 8px;
+    border-radius: 5px;
+    border-style: hidden;
+    -webkit-box-shadow: 0 1px 1px -.5px #d7d7d7;
+    box-shadow: 0 1px 1px -.5px #d7d7d7;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+
+    tr {
+        border-bottom: 1px solid #d7d7d7;
+
+        th{
+            background-color: #e4e4e433;
+            border-bottom: 1px solid #d7d7d7;
+            font-family: Spoqa Han Sans Neo;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            padding: 1rem;
+            position: relative;
+        }
+    }
+
+    tbody{
+        td {
+            border-bottom: 1px solid #d7d7d7;
+            font-family: Spoqa Han Sans Neo;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            padding: .4rem 1rem;
+        }
+    }
+    
+}

@@ -19,7 +19,7 @@ const Header = () => {
                 >
                     INTRO
                 </span>
-                <spna onClick={() => navigate("/about")}>ABOUT</spna>
+                <span onClick={() => navigate("/about")}>ABOUT</span>
             </div>
             <Button
                 btnType="default"

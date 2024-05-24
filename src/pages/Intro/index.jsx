@@ -4,6 +4,11 @@ import TEST from "src/apis/api/test"
 const IntroPage = () => {
     const [nowVal, setNowVal] = useState(0)
 
+    /**
+     * API 호출부
+     * @params 필요할 경우 setting
+     * @returns rest api result
+     */
     const callApi = async () => {
         try {
             const res = await TEST.getList()

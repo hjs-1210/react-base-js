@@ -7,7 +7,7 @@ import { CenterDiv } from "src/styles/common"
 const LoginPage = () => {
     const navigate = useNavigate()
     const login = () => {
-        sessionStorage.setItem("LOGIN", true)
+        sessionStorage.setItem("LOGIN", "true")
         navigate("/intro")
     }
     return (
